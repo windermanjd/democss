@@ -1,0 +1,413 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.content{
+    width:100%;
+    height: 100%;
+    min-height: 800px;
+    background-color:rgba(6, 5, 5, 0.798);
+    position: relative;
+}
+
+.nav{
+    width:100%;
+    height:65px;
+    padding: 15px;
+    background-color: black;
+    color:white;
+    font-size:20px;
+    position: relative;
+}
+
+
+.nav ul{
+    display: flex;
+    flex-direction:row;
+}
+.nav ul li{
+    list-style: none;
+    margin-right:30px;
+    border-bottom: 2px solid magenta;
+    transition: 5s;
+}
+
+
+
+.nav ul li a:link{
+    text-decoration: none;
+    color:white;
+}
+
+.nav ul li a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+
+.search{
+    position: absolute;
+    right:10px;
+    top:15px;
+}
+
+.nav ul li:hover{
+    transform:rotate(360deg);
+    display: block;
+    border-bottom: 2px solid magenta;
+    border-top: 2px solid magenta;
+    border-left: 2px solid magenta;
+    border-right: 2px solid magenta;
+
+}
+
+.logo{
+    display: none;
+    width:100%;
+    height: 90px;
+    background-color: black;
+    text-align: center;
+    padding:20px;
+    
+}
+
+.logo .icon{
+    width:55%;
+    height: 80%;
+}
+
+.slidebar{
+    display: flex;
+    flex-direction: row;
+    width:95%;
+    height: 195px;
+    position: relative;
+    color:white;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: center;
+
+}
+
+.slidebar .icon{
+width:100px;
+height:100px;
+margin:20px;
+margin-right:35px;
+
+}
+
+.screen-text{
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    margin:auto;
+    margin-bottom: 20px;
+    width:620px;
+    word-wrap: break-word;
+}
+
+
+.item-frame{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    background-color: white;
+    padding: 50px;
+    min-height: 500px;
+}
+
+.item-content{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 50px;
+    min-height: 500px;
+    padding-top:90px;
+    margin-bottom: 190px;
+}
+
+.item-frame .item{
+
+    width:350px;
+    height: auto;
+    margin:20px;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-detail{
+    width:100%;
+    height: 100%;
+    margin-bottom: 30px;
+}
+
+.rowspart{
+    display: flex;
+    flex-direction:column;
+    flex-grow: 1;
+}
+
+.rowspart-content{
+    width:100%;
+    height:100%;
+    margin-top:20px;
+    min-height: 50px;
+}
+
+.tab{
+    background-color: rgb(123, 8, 8);
+    width:350px;
+    height: 120px;
+    padding-top: 15px;
+    margin-top:-20px;
+    margin-left:-20px;
+    border-radius: 0px 0px 20px 20px;
+    position:absolute;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 17px solid orange;
+}
+
+.tab i{
+    font-size:45px;
+}
+
+
+
+footer{
+    height:150px;
+    width:100%;
+    background-color: rgb(20, 20, 20);
+    color:white;
+    font-size:20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bg{
+    background:url('../images/main.png');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 420px;
+    background-color: rgb(32, 32, 32);
+    z-index:5;
+}
+
+footer div{
+    position: relative;
+    font-size: 16px;
+    margin-top:40px;
+   
+}
+
+.left-ch{
+    left:0px;
+    top:230px;
+    display: block;
+    width:350px;
+    height: 250px;
+    position: absolute;
+    z-index:100;
+}
+
+.right-ch{
+    right:0px;
+    top:210px;
+    display: block;
+    width:350px;
+    height: 250px;
+    position: absolute;
+    z-index:100;
+}
+
+.w-text{
+left:-120px;
+}
+
+.box-tab{
+    background-color: rgb(20, 19, 19);
+    padding:20px;
+    margin-left:20px;
+    margin-right:20px;
+    position: relative;
+    width: 550px;
+    border-radius: 0px 0px 20px 20px;
+    border-top: 15px solid orange;
+    border-bottom: 15px solid orange;
+    margin-top:0px;
+    color:white;
+}
+
+.ava-icon{
+    width:100%;
+    height: 390px;
+    bottom: -20px;
+    text-align: center;
+    position: relative;
+}
+
+@media (max-width:980px) and (min-width:280px){
+
+    .ava-icon{
+        width:100%;
+        height: 290px;
+        bottom: -20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .box-tab{
+        background-color: rgb(20, 19, 19);
+        padding:20px;
+        margin:20px;
+        position: relative;
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        border-bottom: 15px solid orange;
+        border-top: 15px solid orange;
+        margin-top:0px;
+        color:white;
+
+    }
+
+    .w-text{
+        left:0px;
+        }
+
+        .w-text label{
+        width:100% !important;
+        }
+
+
+    .logo{
+        display: block;
+    }
+
+    .btn{
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+
+
+    .tab{
+        text-align: center;
+        border-bottom: 17px solid orange;
+        width:calc(100% + 40px);
+        position: relative;
+        
+  
+
+    }
+
+    .slidebar{
+        top:0px;
+        left:20px;
+        height:330px;
+        border-bottom: 5px solid orange;
+        margin-bottom: 20px;
+        width: 96%;
+        overflow-y:scroll;
+    }
+
+    .nav{
+        display: none;
+        height: 310px;
+        background:url('../images/bg.png');
+        background-size: cover;
+        background-position: center;   
+        color:darkblue;
+        z-index:10;
+        position: absolute;
+        background-color: darkgray;
+        
+    }
+
+   .nav-show{
+       display: block;
+   }
+
+   .nav-hide{
+       display: none;
+   }
+
+   .bg{
+       height:630px;
+   }
+
+   .nav ul{
+    display: flex;
+    flex-direction:column;
+    margin:20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+    .right-menu{
+        position: absolute;
+        top:20px;
+        color:white;
+        right: 0em;
+        margin-right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .screen-text{
+        font-size: 18px;
+        margin-top:30px;
+         width:100%;
+        word-wrap: break-word;
+    }
+
+    .item-frame{
+        grid-template-columns:1fr;
+        background-color: white;
+        width: 100%;
+
+    }
+
+    .item-frame .item{
+        width: 100%;
+    }
+
+    .nav ul li a:link{
+        text-decoration: none;
+        color:darkblue;
+    }
+    
+    .nav ul li a:visited{
+        text-decoration: none;
+        color:darkblue;
+    }
+
+    .t-hide{
+        display: none;
+    }
+
+    .right-ch{
+        display: none;
+    }
+
+    .left-ch{
+        display: none;
+    }
+
+    
+   
+
+}
+
